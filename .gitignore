@@ -1,0 +1,35 @@
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# Next.js
+/.next/
+/out/
+
+# Vercel
+.vercel
+
+# Testing
+/coverage
+/__snapshots__
+
+# Production
+/build
+/dist
+
+# Package Manager
+npm.*
+npm-*
+yarn.*
+yarn-*
+
+# Environment Variables
+.env
+.env.*
+!.env.config
+!.env.sample
+
+# Misc
+.DS_Store
+*.pem

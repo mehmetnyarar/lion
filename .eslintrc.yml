@@ -1,0 +1,42 @@
+root: true
+parser: '@typescript-eslint/parser'
+parserOptions:
+  ecmaFeatures:
+    jsx: true
+plugins:
+  - '@typescript-eslint'
+extends:
+  - 'eslint:recommended'
+  - 'prettier'
+  - 'plugin:@typescript-eslint/eslint-recommended'
+  - 'plugin:@typescript-eslint/recommended'
+  - 'prettier/@typescript-eslint'
+  - 'prettier/standard'
+  - 'standard'
+  - 'plugin:react-hooks/recommended'
+  - 'plugin:react/recommended'
+  - 'standard-jsx'
+  - 'standard-react'
+rules:
+  '@typescript-eslint/explicit-module-boundary-types': 'off'
+  '@typescript-eslint/no-empty-interface': 'off'
+  'no-use-before-define': 'off'
+  'react/prop-types': 'off'
+overrides:
+  - files:
+      - '**/*.js'
+    rules:
+      '@typescript-eslint/no-var-requires': 'off'
+  - files:
+      - '**/test/**'
+      - '**/__tests__/**'
+    plugins:
+      - 'jest'
+    extends:
+      - 'plugin:jest/recommended'
+      - 'plugin:jest/style'
+    env:
+      es6: true
+      node: true
+      browser: true
+      jest: true
