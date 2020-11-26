@@ -4,7 +4,7 @@ import next from 'next'
 
 // Load and set environment variables
 config()
-const port = Number(process.env.CLIENT_PORT) || 3000
+const port = Number(process.env.PORT) || 3000
 const dev = process.env.NODE_ENV !== 'production'
 
 // Initialize the express server

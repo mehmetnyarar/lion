@@ -23,6 +23,7 @@ npm.*
 npm-*
 yarn.*
 yarn-*
+!yarn.lock
 
 # Environment Variables
 .env
