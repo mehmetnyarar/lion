@@ -1,0 +1,7 @@
+{
+  "LANGUAGE.en": "English",
+  "LANGUAGE.tr": "Türkçe",
+  "_test": "Merhaba!",
+  "error": "Hata!",
+  "error.code": "Hata kodu: {{code}}."
+}
