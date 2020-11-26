@@ -6,6 +6,7 @@
     "allowJs": true,
     "jsx": "preserve",
     "noEmit": true,
+    "downlevelIteration": true,
     "isolatedModules": true,
     /* Strict Type-Checking Options */
     /* Additional Checks */
