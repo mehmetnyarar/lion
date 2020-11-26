@@ -29,7 +29,12 @@ module.exports = {
       }
     }
   ],
-  collectCoverageFrom: ['<rootDir>/src/**/*.{ts,tsx}'],
+  collectCoverageFrom: [
+    '<rootDir>/src/**/*.{ts,tsx}',
+    '!<rootDir>/src/**/index.ts',
+    '!<rootDir>/src/i18n/*.ts',
+    '!<rootDir>/src/pages/_app.tsx'
+  ],
   coverageThreshold: {
     global: {
       statements: 50,

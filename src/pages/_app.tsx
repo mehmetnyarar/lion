@@ -1,13 +1,19 @@
-import type { AppProps } from 'next/app'
+import NextApp, { AppContext, AppProps } from 'next/app'
 import React from 'react'
+import { appWithTranslation } from '~/i18n'
 
 /**
  * Application.
  * @param props Props.
  * @returns &lt;App />.
  */
-const App: React.FC<AppProps> = ({ Component, pageProps }) => {
+function App ({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />
 }
 
-export default App
+App.getInitialProps = async (appContext: AppContext) => {
+  const appProps = await NextApp.getInitialProps(appContext)
+  return { ...appProps }
+}
+
+export default appWithTranslation(App)

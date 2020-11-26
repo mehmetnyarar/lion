@@ -35,8 +35,8 @@ overrides:
     extends:
       - 'plugin:jest/recommended'
       - 'plugin:jest/style'
-    env:
-      es6: true
-      node: true
-      browser: true
-      jest: true
+env:
+  es6: true
+  node: true
+  browser: true
+  jest: true
