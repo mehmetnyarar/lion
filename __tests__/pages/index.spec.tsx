@@ -9,7 +9,7 @@ const getInitialProps = HomeScreen.getInitialProps as GetInitialProps
 describe('pages/index', () => {
   it('should render', () => {
     const { getByText } = render(<HomeScreen t={t} />)
-    expect(getByText(/_test/i)).toBeTruthy()
+    expect(getByText(/homepage/i)).toBeTruthy()
   })
 
   it('should return initial props', async () => {

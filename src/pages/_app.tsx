@@ -1,6 +1,8 @@
+import { ChakraProvider } from '@chakra-ui/react'
 import NextApp, { AppContext, AppProps } from 'next/app'
 import React from 'react'
 import { appWithTranslation } from '~/i18n'
+import { theme } from '~/theme'
 
 /**
  * Application.
@@ -8,7 +10,11 @@ import { appWithTranslation } from '~/i18n'
  * @returns &lt;App />.
  */
 function App ({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <ChakraProvider theme={theme} resetCSS>
+      <Component {...pageProps} />
+    </ChakraProvider>
+  )
 }
 
 App.getInitialProps = async (appContext: AppContext) => {

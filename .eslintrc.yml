@@ -20,6 +20,7 @@ extends:
 rules:
   '@typescript-eslint/explicit-module-boundary-types': 'off'
   '@typescript-eslint/no-empty-interface': 'off'
+  'multiline-ternary': 'off'
   'no-use-before-define': 'off'
   'react/prop-types': 'off'
 overrides:

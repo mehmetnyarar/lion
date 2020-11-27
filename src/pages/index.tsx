@@ -1,6 +1,6 @@
-import Head from 'next/head'
+import { Flex } from '@chakra-ui/react'
 import React from 'react'
-import { LanguageSelector } from '~/components/language'
+import { Layout } from '~/components/layout'
 import { withTranslation } from '~/i18n'
 import { NextScreen } from '~/types'
 
@@ -9,14 +9,11 @@ import { NextScreen } from '~/types'
  */
 export const HomeScreen: NextScreen = ({ t }) => {
   return (
-    <div>
-      <Head>
-        <title>Lion</title>
-        <link rel='icon' href='/favicon.ico' />
-      </Head>
-      <h1>{t('_test')}</h1>
-      <LanguageSelector />
-    </div>
+    <Layout title={t('home')}>
+      <Flex flex={1} p={3}>
+        {t('This is homepage.')}
+      </Flex>
+    </Layout>
   )
 }
 

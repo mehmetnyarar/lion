@@ -2,6 +2,11 @@
   "LANGUAGE.en": "English",
   "LANGUAGE.tr": "Türkçe",
   "_test": "Hello!",
+  "app.copyright": "©2020 Lion.",
+  "app.description": "Localization made easy",
+  "app.name": "L10n",
   "error": "Error!",
-  "error.code": "Error code: {{code}}."
+  "error.code": "Error code: {{code}}.",
+  "scheme.change.dark": "Use light theme",
+  "scheme.change.light": "Use dark theme"
 }
