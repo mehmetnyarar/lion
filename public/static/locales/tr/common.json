@@ -2,6 +2,11 @@
   "LANGUAGE.en": "English",
   "LANGUAGE.tr": "Türkçe",
   "_test": "Merhaba!",
+  "app.copyright": "©2020 Lion.",
+  "app.description": "Kolay yerelleştirme",
+  "app.name": "L10n",
   "error": "Hata!",
-  "error.code": "Hata kodu: {{code}}."
+  "error.code": "Hata kodu: {{code}}.",
+  "scheme.change.dark": "Açık moda geç",
+  "scheme.change.light": "Karanlık moda geç"
 }

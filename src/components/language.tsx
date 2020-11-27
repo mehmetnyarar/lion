@@ -1,3 +1,4 @@
+import { Select } from '@chakra-ui/react'
 import React, { ChangeEvent, useCallback } from 'react'
 import { LANGUAGES, useTranslation } from '~/i18n'
 
@@ -21,7 +22,7 @@ export const LanguageSelector: React.FC<Props> = () => {
   )
 
   return (
-    <select
+    <Select
       value={i18n.language}
       onChange={handleChange}
       aria-label={t('language')}
@@ -31,6 +32,6 @@ export const LanguageSelector: React.FC<Props> = () => {
           {t(`LANGUAGE.${language}`)}
         </option>
       ))}
-    </select>
+    </Select>
   )
 }

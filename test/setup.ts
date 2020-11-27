@@ -27,3 +27,11 @@ jest.mock('~/i18n', () => {
     }
   }
 })
+
+beforeAll(() => {
+  // See https://github.com/nickcolley/jest-axe/issues/147
+  // JSDom does not implement this
+  // and an error was being thrown from jest-axe because of it.
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
+  window.getComputedStyle = (() => {}) as never
+})
